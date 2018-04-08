@@ -1,0 +1,9 @@
+{
+  "name" : "Best_vacation_ever",
+
+  "dates" : ["7/04"],
+
+  "arrival" : ["SFO", "OAK"],
+
+  "departure" : ["DFW"]
+}
