@@ -115,6 +115,7 @@ def get_single_df(date, departure, arrival):
 
     one_by_id('jb-booking-form-submit-button').click()
 
+    time.sleep(5)
     rows = many_by_class('bugTableRow')
 
     flight_dict = dict()
@@ -139,7 +140,6 @@ def get_single_df(date, departure, arrival):
                                                   [depart, arrive, duration, best_price]):
                     flight_dict[str_description] = flight_dict.get(str_description, []) + [value]
     else:
-        time.sleep(3)
         rows = many_by_class('air-booking-select-detail')
         #print('Type 2: Found %d rows' % len(rows))
         if not rows:
